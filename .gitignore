@@ -1,0 +1,41 @@
+﻿# Ignore environment variable files
+.env
+
+# Ignore Docker artifacts
+**/Dockerfile
+**/docker-compose.yml
+**/docker-compose.*.yml
+
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore publish outputs
+publish/
+
+# Ignore temporary files
+tmp/
+temp/
+
+# Ignore node modules (if applicable)
+node_modules/
+
+# Ignore database files (if any)
+*.mdf
+*.ldf
+
+# Ignore other sensitive files
+secrets.json
