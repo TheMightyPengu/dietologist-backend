@@ -1,0 +1,49 @@
+﻿#version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: postgres
+    environment:
+      POSTGRES_USER: "${POSTGRES_USERNAME}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+      POSTGRES_DB: "${POSTGRES_DB}"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  webapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: webapi
+    ports:
+      - "5000:80"
+    depends_on:
+      - postgres
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USERNAME};Password=${POSTGRES_PASSWORD};"
+    networks:
+      - app-network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "${PGADMIN_DEFAULT_USERNAME}"
+      PGADMIN_DEFAULT_PASSWORD: "${PGADMIN_DEFAULT_PASSWORD}"
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+
+volumes:
+  postgresdata:
+
+networks:
+  app-network:

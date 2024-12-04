@@ -1,11 +1,6 @@
 ﻿# Ignore environment variable files
 .env
 
-# Ignore Docker artifacts
-**/Dockerfile
-**/docker-compose.yml
-**/docker-compose.*.yml
-
 # Ignore build outputs
 bin/
 obj/
