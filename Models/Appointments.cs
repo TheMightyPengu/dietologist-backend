@@ -4,7 +4,7 @@ public class Appointments
 {
     public int Id { get; set; }
     public int ServiceId { get; set; }
-    public ProvidedServices Facilitiy { get; set; }
+    public ProvidedServices ProvidedService { get; set; }
     public DateTime AppointmentDate { get; set; }
     public string CustomerName { get; set; }
     public string CustomerEmail { get; set; }

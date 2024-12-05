@@ -1,76 +1,59 @@
-﻿using dietologist_backend.Models;
+﻿using AutoMapper;
+using dietologist_backend.DTO.ProvidedServicesDTOs;
 using dietologist_backend.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dietologist_backend.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class ProvidedServicesController(IProvidedServicesService service) : ControllerBase
+    public class ProvidedServicesController : ControllerBase
     {
-        // GET: /ProvidedServices
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProvidedServices>>> GetAll()
+        private readonly IProvidedServicesService _service;
+
+        public ProvidedServicesController(IProvidedServicesService service)
         {
-            var providedServices = await service.GetAllAsync();
+            _service = service;
+        }
+
+        // GET: api/ProvidedServices
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var providedServices = await _service.GetAllDtosAsync();
             return Ok(providedServices);
         }
 
-        // GET: /ProvidedServices/5
+        // GET: api/ProvidedServices/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProvidedServices>> GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            var providedService = await service.GetByIdAsync(id);
-            if (providedService == null)
-            {
-                return NotFound();
-            }
+            var providedService = await _service.GetDtoByIdAsync(id);
             return Ok(providedService);
         }
 
-        // POST: /ProvidedServices
+        // POST: api/ProvidedServices
         [HttpPost]
-        public async Task<ActionResult<ProvidedServices>> Add([FromBody] ProvidedServices? providedService)
+        public async Task<IActionResult> Add([FromBody] ProvidedServicesBaseDto providedServiceDto)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            var createdService = await service.AddAsync(providedService);
-            return CreatedAtAction(nameof(GetById), new { id = createdService.Id }, createdService);
+            var createdService = await _service.AddAsync(providedServiceDto);
+            return CreatedAtAction(nameof(GetById), null, createdService);
         }
 
-        // PUT: /ProvidedServices/5
+
+        // PUT: api/ProvidedServices/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] ProvidedServices providedService)
+        public async Task<IActionResult> Update(int id, [FromBody] ProvidedServicesBaseDto providedServiceDto)
         {
-            if (id != providedService.Id)
-            {
-                return BadRequest("ID mismatch");
-            }
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            var existingService = await service.GetByIdAsync(id);
-            if (existingService == null)
-            {
-                return NotFound();
-            }
-            await service.UpdateAsync(providedService);
+            await _service.UpdateAsync(id, providedServiceDto);
             return NoContent();
         }
 
-        // DELETE: /ProvidedServices/5
+        // DELETE: api/ProvidedServices/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var existingService = await service.GetByIdAsync(id);
-            if (existingService == null)
-            {
-                return NotFound();
-            }
-            await service.DeleteAsync(id);
+            await _service.DeleteAsync(id);
             return NoContent();
         }
     }

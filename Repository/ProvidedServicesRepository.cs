@@ -1,9 +1,12 @@
-﻿using dietologist_backend.Data;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using dietologist_backend.Data;
 using dietologist_backend.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace dietologist_backend.Repository
 {
+    // Interface
     public interface IProvidedServicesRepository
     {
         Task<IEnumerable<ProvidedServices?>> GetAllAsync();
@@ -13,38 +16,45 @@ namespace dietologist_backend.Repository
         Task DeleteAsync(int id);
     }
     
-    public class ProvidedServicesRepository(AppDbContext context) : IProvidedServicesRepository
+    public class ProvidedServicesRepository : IProvidedServicesRepository
     {
+        private readonly AppDbContext _context;
+
+        public ProvidedServicesRepository(AppDbContext context)
+        {
+            _context = context;
+        }
+
         public async Task<IEnumerable<ProvidedServices?>> GetAllAsync()
         {
-            return await context.ProvidedServices.ToListAsync();
+            return await _context.ProvidedServices.ToListAsync();
         }
 
         public async Task<ProvidedServices?> GetByIdAsync(int id)
         {
-            return await context.ProvidedServices.FindAsync(id);
+            return await _context.ProvidedServices.FindAsync(id);
         }
 
         public async Task<ProvidedServices?> AddAsync(ProvidedServices? providedService)
         {
-            context.ProvidedServices.Add(providedService);
-            await context.SaveChangesAsync();
+            _context.ProvidedServices.Add(providedService);
+            await _context.SaveChangesAsync();
             return providedService;
         }
 
         public async Task UpdateAsync(ProvidedServices providedService)
         {
-            context.Entry(providedService).State = EntityState.Modified;
-            await context.SaveChangesAsync();
+            _context.Entry(providedService).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(int id)
         {
-            var providedService = await context.ProvidedServices.FindAsync(id);
-            if (providedService != null)
+            var service = await _context.ProvidedServices.FindAsync(id);
+            if (service != null)
             {
-                context.ProvidedServices.Remove(providedService);
-                await context.SaveChangesAsync();
+                _context.ProvidedServices.Remove(service);
+                await _context.SaveChangesAsync();
             }
         }
     }
