@@ -10,6 +10,7 @@ builder.Configuration.AddEnvironmentVariables();
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddAutoMapper(typeof(Program));
 
 // Read the connection string from configuration
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
