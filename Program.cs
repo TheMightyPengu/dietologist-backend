@@ -12,6 +12,8 @@ builder.Configuration.AddEnvironmentVariables();
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(typeof(Program));
 
+
+
 // Read the connection string from configuration
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 if (string.IsNullOrEmpty(connectionString))
@@ -36,6 +38,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Register application services and repositories AFTER DbContext
 builder.Services.AddScoped<IProvidedServicesRepository, ProvidedServicesRepository>();
 builder.Services.AddScoped<IProvidedServicesService, ProvidedServicesService>();
+builder.Services.AddScoped<IAppointmentsService, AppointmentsService>();
+builder.Services.AddScoped<IAppointmentsRepository, AppointmentsRepository>();
+
+
 
 // Add CORS policy if needed
 builder.Services.AddCors(options =>

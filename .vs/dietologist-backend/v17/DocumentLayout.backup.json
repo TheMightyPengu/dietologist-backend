@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\dto\\appointmentsbasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:dto\\appointmentsbasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\models\\appointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:models\\appointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\helpers\\automapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:helpers\\automapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\repository\\appointmentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:repository\\appointmentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\services\\appointmentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:services\\appointmentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\services\\providedservicesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:services\\providedservicesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\repository\\providedservicesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:repository\\providedservicesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\controllers\\providedservicescontrolller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\providedservicescontrolller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\gitrepo\\dietologist-backend\\dto\\providedservicesbasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:dto\\providedservicesbasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppointmentsBaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\DTO\\AppointmentsBaseDto.cs",
+              "RelativeDocumentMoniker": "DTO\\AppointmentsBaseDto.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\DTO\\AppointmentsBaseDto.cs",
+              "RelativeToolTip": "DTO\\AppointmentsBaseDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T19:58:37.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProvidedServicesControlller.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Controllers\\ProvidedServicesControlller.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProvidedServicesControlller.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Controllers\\ProvidedServicesControlller.cs",
+              "RelativeToolTip": "Controllers\\ProvidedServicesControlller.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T20:02:10.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:29:13.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProvidedServicesService.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Services\\ProvidedServicesService.cs",
+              "RelativeDocumentMoniker": "Services\\ProvidedServicesService.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Services\\ProvidedServicesService.cs",
+              "RelativeToolTip": "Services\\ProvidedServicesService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T20:25:47.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppointmentsService.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Services\\AppointmentsService.cs",
+              "RelativeDocumentMoniker": "Services\\AppointmentsService.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Services\\AppointmentsService.cs",
+              "RelativeToolTip": "Services\\AppointmentsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T20:29:56.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppointmentsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Repository\\AppointmentsRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\AppointmentsRepository.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Repository\\AppointmentsRepository.cs",
+              "RelativeToolTip": "Repository\\AppointmentsRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T20:17:15.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutoMapper.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Helpers\\AutoMapper.cs",
+              "RelativeDocumentMoniker": "Helpers\\AutoMapper.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Helpers\\AutoMapper.cs",
+              "RelativeToolTip": "Helpers\\AutoMapper.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:29:07.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Appointments.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Models\\Appointments.cs",
+              "RelativeDocumentMoniker": "Models\\Appointments.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Models\\Appointments.cs",
+              "RelativeToolTip": "Models\\Appointments.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T19:59:17.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AppointmentsController.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T20:06:55.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProvidedServicesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Repository\\ProvidedServicesRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ProvidedServicesRepository.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\Repository\\ProvidedServicesRepository.cs",
+              "RelativeToolTip": "Repository\\ProvidedServicesRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA4wDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T20:07:34.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProvidedServicesBaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\DTO\\ProvidedServicesBaseDto.cs",
+              "RelativeDocumentMoniker": "DTO\\ProvidedServicesBaseDto.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\DTO\\ProvidedServicesBaseDto.cs",
+              "RelativeToolTip": "DTO\\ProvidedServicesBaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:29:05.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\gitrepo\\dietologist-backend\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-10T18:26:15.903Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
