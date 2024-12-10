@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using dietologist_backend.DTO.ProvidedServicesDTOs;
+using dietologist_backend.DTO;
 using dietologist_backend.Models;
 using dietologist_backend.Repository;
 
@@ -41,7 +41,7 @@ namespace dietologist_backend.Services
             return _mapper.Map<ProvidedServicesBaseDto>(service);
         }
 
-        public async Task<ProvidedServicesBaseDto > AddAsync(ProvidedServicesBaseDto dto)
+        public async Task<ProvidedServicesBaseDto> AddAsync(ProvidedServicesBaseDto dto)
         {
             var entity = _mapper.Map<ProvidedServices>(dto);
             var createdEntity = await _repository.AddAsync(entity);

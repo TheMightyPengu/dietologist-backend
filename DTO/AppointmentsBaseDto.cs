@@ -2,7 +2,7 @@
 {
     public class AppointmentsBaseDto
     {
-        public int Id { get; set; }
+        public int Id { get; internal set; }
         public int ServiceId { get; set; }
         public string ProvidedService { get; set; }
         public DateTime AppointmentDate { get; set; }

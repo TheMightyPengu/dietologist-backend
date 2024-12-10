@@ -12,8 +12,8 @@ using dietologist_backend.Data;
 namespace dietologist_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241204195122_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20241210191719_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,13 +53,13 @@ namespace dietologist_backend.Migrations
                         .HasColumnType("text")
                         .HasColumnName("customer_phone");
 
-                    b.Property<int>("FacilitiyId")
-                        .HasColumnType("integer")
-                        .HasColumnName("facilitiy_id");
-
                     b.Property<bool>("IsPrepaid")
                         .HasColumnType("boolean")
                         .HasColumnName("is_prepaid");
+
+                    b.Property<int>("ProvidedServiceId")
+                        .HasColumnType("integer")
+                        .HasColumnName("provided_service_id");
 
                     b.Property<int>("ServiceId")
                         .HasColumnType("integer")
@@ -68,8 +68,8 @@ namespace dietologist_backend.Migrations
                     b.HasKey("Id")
                         .HasName("pk_appointments");
 
-                    b.HasIndex("FacilitiyId")
-                        .HasDatabaseName("ix_appointments_facilitiy_id");
+                    b.HasIndex("ProvidedServiceId")
+                        .HasDatabaseName("ix_appointments_provided_service_id");
 
                     b.ToTable("appointments", (string)null);
                 });
@@ -311,12 +311,12 @@ namespace dietologist_backend.Migrations
                         .HasColumnType("text")
                         .HasColumnName("description");
 
-                    b.Property<TimeSpan>("Duration")
-                        .HasColumnType("interval")
+                    b.Property<int>("Duration")
+                        .HasColumnType("integer")
                         .HasColumnName("duration");
 
-                    b.Property<TimeSpan>("Interval")
-                        .HasColumnType("interval")
+                    b.Property<int>("Interval")
+                        .HasColumnType("integer")
                         .HasColumnName("interval");
 
                     b.Property<decimal>("PriceIncludingVAT")
@@ -424,14 +424,14 @@ namespace dietologist_backend.Migrations
 
             modelBuilder.Entity("dietologist_backend.Models.Appointments", b =>
                 {
-                    b.HasOne("dietologist_backend.Models.ProvidedServices", "Facilitiy")
+                    b.HasOne("dietologist_backend.Models.ProvidedServices", "ProvidedService")
                         .WithMany()
-                        .HasForeignKey("FacilitiyId")
+                        .HasForeignKey("ProvidedServiceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_appointments_provided_services_facilitiy_id");
+                        .HasConstraintName("fk_appointments_provided_services_provided_service_id");
 
-                    b.Navigation("Facilitiy");
+                    b.Navigation("ProvidedService");
                 });
 #pragma warning restore 612, 618
         }

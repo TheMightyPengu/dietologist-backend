@@ -2,7 +2,7 @@
 {
     public class ArticlesBaseDto
     {
-        public int Id { get; set; }
+        public int Id { get; internal set; }
         public string Title { get; set; }
         public string Subtitle { get; set; }
         public string Heading { get; set; }

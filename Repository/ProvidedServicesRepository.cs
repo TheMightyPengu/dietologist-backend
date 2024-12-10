@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using dietologist_backend.Data;
+﻿using dietologist_backend.Data;
 using dietologist_backend.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,9 +7,9 @@ namespace dietologist_backend.Repository
     // Interface
     public interface IProvidedServicesRepository
     {
-        Task<IEnumerable<ProvidedServices?>> GetAllAsync();
-        Task<ProvidedServices?> GetByIdAsync(int id);
-        Task<ProvidedServices?> AddAsync(ProvidedServices? providedService);
+        Task<IEnumerable<ProvidedServices>> GetAllAsync();
+        Task<ProvidedServices> GetByIdAsync(int id);
+        Task<ProvidedServices> AddAsync(ProvidedServices providedService);
         Task UpdateAsync(ProvidedServices providedService);
         Task DeleteAsync(int id);
     }
@@ -25,17 +23,17 @@ namespace dietologist_backend.Repository
             _context = context;
         }
 
-        public async Task<IEnumerable<ProvidedServices?>> GetAllAsync()
+        public async Task<IEnumerable<ProvidedServices>> GetAllAsync()
         {
             return await _context.ProvidedServices.ToListAsync();
         }
 
-        public async Task<ProvidedServices?> GetByIdAsync(int id)
+        public async Task<ProvidedServices> GetByIdAsync(int id)
         {
-            return await _context.ProvidedServices.FindAsync(id);
+            return (await _context.ProvidedServices.FindAsync(id));
         }
 
-        public async Task<ProvidedServices?> AddAsync(ProvidedServices? providedService)
+        public async Task<ProvidedServices> AddAsync(ProvidedServices providedService)
         {
             _context.ProvidedServices.Add(providedService);
             await _context.SaveChangesAsync();

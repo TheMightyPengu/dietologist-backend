@@ -2,7 +2,7 @@
 {
     public class ResumeBaseDto
     {
-        public int Id { get; set; }
+        public int Id { get; internal set; }
         public string FileName { get; set; }
         public string FileType { get; set; }
         public DateTime UploadedAt { get; set; }

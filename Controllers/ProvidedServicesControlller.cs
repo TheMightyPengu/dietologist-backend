@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using dietologist_backend.DTO.ProvidedServicesDTOs;
+﻿using dietologist_backend.DTO;
 using dietologist_backend.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,41 +19,86 @@ namespace dietologist_backend.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var providedServices = await _service.GetAllDtosAsync();
-            return Ok(providedServices);
+            try
+            {
+                var providedServices = await _service.GetAllDtosAsync();
+                return Ok(providedServices);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
 
         // GET: api/ProvidedServices/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var providedService = await _service.GetDtoByIdAsync(id);
-            return Ok(providedService);
+            try
+            {
+                var providedService = await _service.GetDtoByIdAsync(id);
+                return Ok(providedService);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
 
         // POST: api/ProvidedServices
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] ProvidedServicesBaseDto providedServiceDto)
         {
-            var createdService = await _service.AddAsync(providedServiceDto);
-            return CreatedAtAction(nameof(GetById), null, createdService);
+            try
+            {
+                var createdService = await _service.AddAsync(providedServiceDto);
+                return Ok(createdService);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
-
 
         // PUT: api/ProvidedServices/5
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] ProvidedServicesBaseDto providedServiceDto)
         {
-            await _service.UpdateAsync(id, providedServiceDto);
-            return NoContent();
+            try
+            {
+                await _service.UpdateAsync(id, providedServiceDto);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
 
         // DELETE: api/ProvidedServices/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _service.DeleteAsync(id);
-            return NoContent();
+            try
+            {
+                await _service.DeleteAsync(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
+        }
+
+        private IActionResult HandleException(Exception ex)
+        {
+            Console.WriteLine($"Unexpected error: {ex.Message}\n{ex.StackTrace}");
+
+            return StatusCode(500, new
+            {
+                Error = "An unexpected error occurred. Please try again later.",
+                Details = ex.Message
+            });
         }
     }
 }

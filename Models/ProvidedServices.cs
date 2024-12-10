@@ -4,8 +4,8 @@ public class ProvidedServices
 {
     public int Id { get; set; }
     public string Category { get; set; }
-    public TimeSpan Duration { get; set; }
+    public int Duration { get; set; }
     public string Description { get; set; }
     public decimal PriceIncludingVAT { get; set; }
-    public TimeSpan Interval { get; set; }
+    public int Interval { get; set; }
 }

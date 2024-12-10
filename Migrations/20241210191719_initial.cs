@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace dietologist_backend.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -118,10 +118,10 @@ namespace dietologist_backend.Migrations
                     id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     category = table.Column<string>(type: "text", nullable: false),
-                    duration = table.Column<TimeSpan>(type: "interval", nullable: false),
+                    duration = table.Column<int>(type: "integer", nullable: false),
                     description = table.Column<string>(type: "text", nullable: false),
                     price_including_vat = table.Column<decimal>(type: "numeric", nullable: false),
-                    interval = table.Column<TimeSpan>(type: "interval", nullable: false)
+                    interval = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -181,7 +181,7 @@ namespace dietologist_backend.Migrations
                     id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     service_id = table.Column<int>(type: "integer", nullable: false),
-                    facilitiy_id = table.Column<int>(type: "integer", nullable: false),
+                    provided_service_id = table.Column<int>(type: "integer", nullable: false),
                     appointment_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     customer_name = table.Column<string>(type: "text", nullable: false),
                     customer_email = table.Column<string>(type: "text", nullable: false),
@@ -192,17 +192,17 @@ namespace dietologist_backend.Migrations
                 {
                     table.PrimaryKey("pk_appointments", x => x.id);
                     table.ForeignKey(
-                        name: "fk_appointments_provided_services_facilitiy_id",
-                        column: x => x.facilitiy_id,
+                        name: "fk_appointments_provided_services_provided_service_id",
+                        column: x => x.provided_service_id,
                         principalTable: "provided_services",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "ix_appointments_facilitiy_id",
+                name: "ix_appointments_provided_service_id",
                 table: "appointments",
-                column: "facilitiy_id");
+                column: "provided_service_id");
         }
 
         /// <inheritdoc />

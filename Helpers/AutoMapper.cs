@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using dietologist_backend.DTO;
 using dietologist_backend.Models;
-using dietologist_backend.DTO.ProvidedServicesDTOs;
 
 namespace dietologist_backend.Helpers
 {

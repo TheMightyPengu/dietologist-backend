@@ -308,12 +308,12 @@ namespace dietologist_backend.Migrations
                         .HasColumnType("text")
                         .HasColumnName("description");
 
-                    b.Property<TimeSpan>("Duration")
-                        .HasColumnType("interval")
+                    b.Property<int>("Duration")
+                        .HasColumnType("integer")
                         .HasColumnName("duration");
 
-                    b.Property<TimeSpan>("Interval")
-                        .HasColumnType("interval")
+                    b.Property<int>("Interval")
+                        .HasColumnType("integer")
                         .HasColumnName("interval");
 
                     b.Property<decimal>("PriceIncludingVAT")
