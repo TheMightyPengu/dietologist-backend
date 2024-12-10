@@ -10,47 +10,58 @@ namespace dietologist_backend.Helpers
         {
             // ProvidedServices
             CreateMap<ProvidedServices, ProvidedServicesBaseDto>();
-            CreateMap<ProvidedServicesBaseDto, ProvidedServices>();
+            CreateMap<ProvidedServicesBaseDto, ProvidedServices>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // Articles
             CreateMap<Articles, ArticlesBaseDto>();
-            CreateMap<ArticlesBaseDto, Articles>();
+            CreateMap<ArticlesBaseDto, Articles>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // Appointments
             CreateMap<Appointments, AppointmentsBaseDto>();
-            CreateMap<AppointmentsBaseDto, Appointments>();
+            CreateMap<AppointmentsBaseDto, Appointments>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // ContactInfo
             CreateMap<ContactInfo, ContactInfoBaseDto>();
-            CreateMap<ContactInfoBaseDto, ContactInfo>();
+            CreateMap<ContactInfoBaseDto, ContactInfo>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // ContactMessages
             CreateMap<ContactMessages, ContactMessagesBaseDto>();
-            CreateMap<ContactMessagesBaseDto, ContactMessages>();
+            CreateMap<ContactMessagesBaseDto, ContactMessages>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // Ebooks
             CreateMap<Ebooks, EbooksBaseDto>();
-            CreateMap<EbooksBaseDto, Ebooks>();
+            CreateMap<EbooksBaseDto, Ebooks>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // Images
             CreateMap<Images, ImagesBaseDto>();
-            CreateMap<ImagesBaseDto, Images>();
+            CreateMap<ImagesBaseDto, Images>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // NewsletterSubscribers
             CreateMap<NewsletterSubscribers, NewsletterSubscribersBaseDto>();
-            CreateMap<NewsletterSubscribersBaseDto, NewsletterSubscribers>();
+            CreateMap<NewsletterSubscribersBaseDto, NewsletterSubscribers>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // Recipes
             CreateMap<Recipes, RecipesBaseDto>();
-            CreateMap<RecipesBaseDto, Recipes>();
+            CreateMap<RecipesBaseDto, Recipes>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // Resume
             CreateMap<Resume, ResumeBaseDto>();
-            CreateMap<ResumeBaseDto, Resume>();
+            CreateMap<ResumeBaseDto, Resume>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // SocialMediaLinks
             CreateMap<SocialMediaLinks, SocialMediaLinksBaseDto>();
-            CreateMap<SocialMediaLinksBaseDto, SocialMediaLinks>();
+            CreateMap<SocialMediaLinksBaseDto, SocialMediaLinks>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
         }
     }
 }
