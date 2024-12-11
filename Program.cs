@@ -42,6 +42,8 @@ builder.Services.AddScoped<IAppointmentsService, AppointmentsService>();
 builder.Services.AddScoped<IAppointmentsRepository, AppointmentsRepository>();
 builder.Services.AddScoped<IArticlesService, ArticlesService>();
 builder.Services.AddScoped<IArticlesRepository, ArticlesRepository>();
+builder.Services.AddScoped<IContactInfoService, ContactInfoService>();
+builder.Services.AddScoped<IContactInfoRepository, ContactInfoRepository>();
 
 
 

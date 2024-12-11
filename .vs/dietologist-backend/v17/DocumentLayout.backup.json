@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\services\\articlesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:services\\articlesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\controllers\\contactinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\contactinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\controllers\\providedservicescontrolller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\providedservicescontrolller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ArticlesService.cs",
-              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\ArticlesService.cs",
-              "RelativeDocumentMoniker": "Services\\ArticlesService.cs",
-              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\ArticlesService.cs",
-              "RelativeToolTip": "Services\\ArticlesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ProvidedServicesControlller.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\ProvidedServicesControlller.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProvidedServicesControlller.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\ProvidedServicesControlller.cs",
+              "RelativeToolTip": "Controllers\\ProvidedServicesControlller.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T16:20:19.947Z",
+              "WhenOpened": "2024-12-11T17:46:23.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAABGAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ContactInfoController.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\ContactInfoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactInfoController.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\ContactInfoController.cs",
+              "RelativeToolTip": "Controllers\\ContactInfoController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAkwFgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T16:19:43.262Z",
+              "WhenOpened": "2024-12-11T17:45:59.954Z",
               "EditorCaption": ""
             }
           ]
