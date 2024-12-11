@@ -44,6 +44,10 @@ builder.Services.AddScoped<IArticlesService, ArticlesService>();
 builder.Services.AddScoped<IArticlesRepository, ArticlesRepository>();
 builder.Services.AddScoped<IContactInfoService, ContactInfoService>();
 builder.Services.AddScoped<IContactInfoRepository, ContactInfoRepository>();
+builder.Services.AddScoped<IContactMessagesService, ContactMessagesService>();
+builder.Services.AddScoped<IContactMessagesRepository, ContactMessagesRepository>();
+builder.Services.AddScoped<IEbooksService, EbooksService>();
+builder.Services.AddScoped<IEbooksRepository, EbooksRepository>();
 
 
 
