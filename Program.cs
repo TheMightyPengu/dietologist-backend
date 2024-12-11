@@ -40,6 +40,8 @@ builder.Services.AddScoped<IProvidedServicesRepository, ProvidedServicesReposito
 builder.Services.AddScoped<IProvidedServicesService, ProvidedServicesService>();
 builder.Services.AddScoped<IAppointmentsService, AppointmentsService>();
 builder.Services.AddScoped<IAppointmentsRepository, AppointmentsRepository>();
+builder.Services.AddScoped<IArticlesService, ArticlesService>();
+builder.Services.AddScoped<IArticlesRepository, ArticlesRepository>();
 
 
 
