@@ -15,7 +15,6 @@ public class ContactInfoController : ControllerBase
         _service = service;
     }
 
-    // GET: api/ContactInfo
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -23,19 +22,13 @@ public class ContactInfoController : ControllerBase
         return Ok(contactInfos);
     }
 
-    // GET: api/ContactInfo/5
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
         var contactInfo = await _service.GetDtoByIdAsync(id);
-        if (contactInfo == null)
-        {
-            return NotFound(new { Message = $"ContactInfo with ID {id} not found." });
-        }
         return Ok(contactInfo);
     }
 
-    // POST: api/ContactInfo
     [HttpPost]
     public async Task<IActionResult> Add([FromBody] ContactInfoBaseDto contactInfoDto)
     {
@@ -43,7 +36,6 @@ public class ContactInfoController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = createdContactInfo.Id }, createdContactInfo);
     }
 
-    // PUT: api/ContactInfo/5
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] ContactInfoBaseDto contactInfoDto)
     {
@@ -51,7 +43,6 @@ public class ContactInfoController : ControllerBase
         return NoContent();
     }
 
-    // DELETE: api/ContactInfo/5
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {

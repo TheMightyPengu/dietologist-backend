@@ -1,62 +1,50 @@
 ﻿using dietologist_backend.Data;
-using dietologist_backend.DTO;
 using dietologist_backend.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace dietologist_backend.Repository
+namespace dietologist_backend.Repository;
+
+public interface IArticlesRepository
 {
-    // Interface
-    public interface IArticlesRepository
+    Task<IEnumerable<Articles>> GetAllAsync();
+    Task<Articles?> GetByIdAsync(int id);
+    Task<Articles> AddAsync(Articles article);
+    Task UpdateAsync(Articles article);
+    Task DeleteAsync(int id);
+}
+
+public class ArticlesRepository(AppDbContext context) : IArticlesRepository
+{
+    public async Task<IEnumerable<Articles>> GetAllAsync()
     {
-        Task<IEnumerable<Articles>> GetAllAsync();
-        Task<Articles> GetByIdAsync(int id);
-        Task<Articles> AddAsync(Articles article);
-        Task UpdateAsync(Articles article);
-        Task DeleteAsync(int id);
+        return await context.Articles.ToListAsync();
     }
 
-    public class ArticlesRepository : IArticlesRepository
+    public async Task<Articles?> GetByIdAsync(int id)
     {
-        private readonly AppDbContext _context;
+        return await context.Articles.FindAsync(id);
+    }
 
-        public ArticlesRepository(AppDbContext context)
-        {
-            _context = context;
-        }
+    public async Task<Articles> AddAsync(Articles article)
+    {
+        context.Articles.Add(article);
+        await context.SaveChangesAsync();
+        return article;
+    }
 
-        public async Task<IEnumerable<Articles>> GetAllAsync()
-        {
-            return await _context.Articles.ToListAsync();
-        }
+    public async Task UpdateAsync(Articles article)
+    {
+        context.Entry(article).State = EntityState.Modified;
+        await context.SaveChangesAsync();
+    }
 
-        public async Task<Articles> GetByIdAsync(int id)
+    public async Task DeleteAsync(int id)
+    {
+        var article = await context.Articles.FindAsync(id);
+        if (article != null)
         {
-            return await _context.Articles.FirstOrDefaultAsync(a => a.Id == id);
-        }
-
-        public async Task<Articles> AddAsync(Articles article)
-        {
-            _context.Articles.Add(article);
-            await _context.SaveChangesAsync();
-            return article;
-        }
-
-        public async Task UpdateAsync(Articles article)
-        {
-            _context.Entry(article).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task DeleteAsync(int id)
-        {
-            var article = await _context.Articles.FindAsync(id);
-            if (article != null)
-            {
-                _context.Articles.Remove(article);
-                await _context.SaveChangesAsync();
-            }
+            context.Articles.Remove(article);
+            await context.SaveChangesAsync();
         }
     }
 }

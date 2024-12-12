@@ -1,10 +1,10 @@
 using dietologist_backend.Data;
-using dietologist_backend.DTO;
 using dietologist_backend.Helpers;
 using dietologist_backend.Repository;
 using dietologist_backend.Services;
 using dietologist_backend.Validators;
 using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,10 +17,16 @@ builder.Services.AddControllers(options =>
 {
     options.Filters.Add<CustomExceptionFilter>();
 });
+
+// Register FluentValidation with Auto-Validation and Client-Side Support
+builder.Services
+    .AddFluentValidationAutoValidation()   // Enables automatic validation
+    .AddFluentValidationClientsideAdapters();  // Enables client-side validation
+
+// Automatically register all validators in the assembly
+builder.Services.AddValidatorsFromAssemblyContaining<ProvidedServicesBaseDtoValidator>();
+
 builder.Services.AddAutoMapper(typeof(Program));
-
-builder.Services.AddScoped<IValidator<ProvidedServicesBaseDto>, ProvidedServicesBaseDtoValidator>();
-
 
 
 // Read the connection string from configuration

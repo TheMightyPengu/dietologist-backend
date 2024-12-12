@@ -15,7 +15,6 @@ public class ContactMessagesController : ControllerBase
         _service = service;
     }
 
-    // GET: api/ContactMessages
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -23,27 +22,20 @@ public class ContactMessagesController : ControllerBase
         return Ok(messages);
     }
 
-    // GET: api/ContactMessages/5
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
         var message = await _service.GetDtoByIdAsync(id);
-        if (message == null)
-        {
-            return NotFound(new { Message = $"ContactMessage with ID {id} not found." });
-        }
         return Ok(message);
     }
 
-    // POST: api/ContactMessages
     [HttpPost]
     public async Task<IActionResult> Add([FromBody] ContactMessagesBaseDto messageDto)
     {
         var createdMessage = await _service.AddAsync(messageDto);
-        return Ok(createdMessage);
+        return CreatedAtAction(nameof(GetById), new { id = createdMessage.Id }, createdMessage);
     }
 
-    // PUT: api/ContactMessages/5
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] ContactMessagesBaseDto messageDto)
     {
@@ -51,7 +43,6 @@ public class ContactMessagesController : ControllerBase
         return NoContent();
     }
 
-    // DELETE: api/ContactMessages/5
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {

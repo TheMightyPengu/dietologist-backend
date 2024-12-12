@@ -1,78 +1,50 @@
 ﻿using dietologist_backend.Data;
 using dietologist_backend.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace dietologist_backend.Repository
+namespace dietologist_backend.Repository;
+
+public interface IContactInfoRepository
 {
-    // Interface
-    public interface IContactInfoRepository
+    Task<IEnumerable<ContactInfo>> GetAllAsync();
+    Task<ContactInfo?> GetByIdAsync(int id);
+    Task<ContactInfo> AddAsync(ContactInfo contactInfo);
+    Task UpdateAsync(ContactInfo contactInfo);
+    Task DeleteAsync(int id);
+}
+
+public class ContactInfoRepository(AppDbContext context) : IContactInfoRepository
+{
+    public async Task<IEnumerable<ContactInfo>> GetAllAsync()
     {
-        Task<IEnumerable<ContactInfo>> GetAllAsync();
-        Task<ContactInfo> GetByIdAsync(int id);
-        Task<ContactInfo> AddAsync(ContactInfo contactInfo);
-        Task UpdateAsync(ContactInfo contactInfo);
-        Task DeleteAsync(int id);
+        return await context.ContactInfo.ToListAsync();
     }
 
-    // Implementation
-    public class ContactInfoRepository : IContactInfoRepository
+    public async Task<ContactInfo?> GetByIdAsync(int id)
     {
-        private readonly AppDbContext _context;
+        return await context.ContactInfo.FindAsync(id);
+    }
 
-        public ContactInfoRepository(AppDbContext context)
+    public async Task<ContactInfo> AddAsync(ContactInfo contactInfo)
+    {
+        context.ContactInfo.Add(contactInfo);
+        await context.SaveChangesAsync();
+        return contactInfo;
+    }
+
+    public async Task UpdateAsync(ContactInfo contactInfo)
+    {
+        context.Entry(contactInfo).State = EntityState.Modified;
+        await context.SaveChangesAsync();
+    }
+
+    public async Task DeleteAsync(int id)
+    {
+        var entity = await context.ContactInfo.FindAsync(id);
+        if (entity != null)
         {
-            _context = context;
-        }
-
-        public async Task<IEnumerable<ContactInfo>> GetAllAsync()
-        {
-            return await _context.ContactInfo.ToListAsync();
-        }
-
-        public async Task<ContactInfo> GetByIdAsync(int id)
-        {
-            return await _context.ContactInfo
-                .FirstOrDefaultAsync(ci => ci.Id == id);
-        }
-
-        public async Task<ContactInfo> AddAsync(ContactInfo contactInfo)
-        {
-            _context.ContactInfo.Add(contactInfo);
-            await _context.SaveChangesAsync();
-            return contactInfo;
-        }
-
-        public async Task UpdateAsync(ContactInfo contactInfo)
-        {
-            var entity = await _context.ContactInfo.FindAsync(contactInfo.Id);
-
-            if (entity == null)
-            {
-                throw new KeyNotFoundException($"ContactInfo with Id {contactInfo.Id} not found.");
-            }
-
-            entity.Email = contactInfo.Email;
-            entity.Telephone = contactInfo.Telephone;
-            entity.Location = contactInfo.Location;
-
-            _context.Entry(entity).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task DeleteAsync(int id)
-        {
-            var entity = await _context.ContactInfo.FindAsync(id);
-            if (entity != null)
-            {
-                _context.ContactInfo.Remove(entity);
-                await _context.SaveChangesAsync();
-            }
-            else
-            {
-                throw new KeyNotFoundException($"ContactInfo with Id {id} not found.");
-            }
+            context.ContactInfo.Remove(entity);
+            await context.SaveChangesAsync();
         }
     }
 }

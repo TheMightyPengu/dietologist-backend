@@ -15,7 +15,6 @@ public class EbooksController : ControllerBase
         _service = service;
     }
 
-    // GET: api/Ebooks
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -23,19 +22,13 @@ public class EbooksController : ControllerBase
         return Ok(ebooks);
     }
 
-    // GET: api/Ebooks/5
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
         var ebook = await _service.GetDtoByIdAsync(id);
-        if (ebook == null)
-        {
-            return NotFound(new { Message = $"Ebook with ID {id} not found." });
-        }
         return Ok(ebook);
     }
 
-    // POST: api/Ebooks
     [HttpPost]
     public async Task<IActionResult> Add([FromBody] EbooksBaseDto ebookDto)
     {
@@ -43,7 +36,6 @@ public class EbooksController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = createdEbook.Id }, createdEbook);
     }
 
-    // PUT: api/Ebooks/5
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] EbooksBaseDto ebookDto)
     {
@@ -51,7 +43,6 @@ public class EbooksController : ControllerBase
         return NoContent();
     }
 
-    // DELETE: api/Ebooks/5
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {

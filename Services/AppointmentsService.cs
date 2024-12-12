@@ -2,75 +2,84 @@
 using dietologist_backend.DTO;
 using dietologist_backend.Models;
 using dietologist_backend.Repository;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using FluentValidation;
 
-namespace dietologist_backend.Services
+namespace dietologist_backend.Services;
+
+public interface IAppointmentsService
 {
-    public interface IAppointmentsService
+    Task<IEnumerable<AppointmentsBaseDto>> GetAllDtosAsync();
+    Task<AppointmentsBaseDto?> GetDtoByIdAsync(int id);
+    Task<AppointmentsBaseDto> AddAsync(AppointmentsBaseDto dto);
+    Task UpdateAsync(int id, AppointmentsBaseDto dto);
+    Task DeleteAsync(int id);
+}
+
+public class AppointmentsService : IAppointmentsService
+{
+    private readonly IAppointmentsRepository _repository;
+    private readonly IMapper _mapper;
+    private readonly IValidator<AppointmentsBaseDto> _validator;
+
+    public AppointmentsService(
+        IAppointmentsRepository repository, 
+        IMapper mapper, 
+        IValidator<AppointmentsBaseDto> validator)
     {
-        Task<IEnumerable<AppointmentsBaseDto>> GetAllDtosAsync();
-        Task<AppointmentsBaseDto> GetDtoByIdAsync(int id);
-        Task<AppointmentsBaseDto> AddAsync(AppointmentsBaseDto dto);
-        Task UpdateAsync(int id, AppointmentsBaseDto dto);
-        Task DeleteAsync(int id);
+        _repository = repository ?? throw new ArgumentNullException(nameof(repository));
+        _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+        _validator = validator ?? throw new ArgumentNullException(nameof(validator));
     }
 
-    public class AppointmentsService : IAppointmentsService
+    public async Task<IEnumerable<AppointmentsBaseDto>> GetAllDtosAsync()
     {
-        private readonly IAppointmentsRepository _repository;
-        private readonly IMapper _mapper;
+        var appointments = await _repository.GetAllAsync();
+        return _mapper.Map<IEnumerable<AppointmentsBaseDto>>(appointments);
+    }
 
-        public AppointmentsService(IAppointmentsRepository repository, IMapper mapper)
-        {
-            _repository = repository;
-            _mapper = mapper;
-        }
+    public async Task<AppointmentsBaseDto?> GetDtoByIdAsync(int id)
+    {
+        var appointment = await FindAppointmentByIdAsync(id);
+        return _mapper.Map<AppointmentsBaseDto>(appointment);
+    }
 
-        public async Task<IEnumerable<AppointmentsBaseDto>> GetAllDtosAsync()
-        {
-            var appointments = await _repository.GetAllAsync();
-            return _mapper.Map<IEnumerable<AppointmentsBaseDto>>(appointments);
-        }
+    public async Task<AppointmentsBaseDto> AddAsync(AppointmentsBaseDto dto)
+    {
+        await ValidateDtoAsync(dto);
 
-        public async Task<AppointmentsBaseDto> GetDtoByIdAsync(int id)
-        {
-            var appointment = await _repository.GetByIdAsync(id);
-            if (appointment == null)
-            {
-                throw new KeyNotFoundException($"Appointment with ID {id} not found.");
-            }
-            return _mapper.Map<AppointmentsBaseDto>(appointment);
-        }
+        var entity = _mapper.Map<Appointments>(dto);
+        var createdEntity = await _repository.AddAsync(entity);
+        return _mapper.Map<AppointmentsBaseDto>(createdEntity);
+    }
 
-        public async Task<AppointmentsBaseDto> AddAsync(AppointmentsBaseDto dto)
-        {
-            var entity = _mapper.Map<Appointments>(dto);
-            var createdEntity = await _repository.AddAsync(entity);
-            return _mapper.Map<AppointmentsBaseDto>(createdEntity);
-        }
+    public async Task UpdateAsync(int id, AppointmentsBaseDto dto)
+    {
+        await ValidateDtoAsync(dto);
 
-        public async Task UpdateAsync(int id, AppointmentsBaseDto dto)
-        {
-            var existingAppointment = await _repository.GetByIdAsync(id);
-            if (existingAppointment == null)
-            {
-                throw new KeyNotFoundException($"Appointment with ID {id} not found.");
-            }
+        var existingAppointment = await FindAppointmentByIdAsync(id);
+        _mapper.Map(dto, existingAppointment);
+        await _repository.UpdateAsync(existingAppointment);
+    }
 
-            var updatedAppointment = _mapper.Map(dto, existingAppointment);
-            await _repository.UpdateAsync(updatedAppointment);
-        }
+    public async Task DeleteAsync(int id)
+    {
+        var existingAppointment = await FindAppointmentByIdAsync(id);
+        await _repository.DeleteAsync(existingAppointment.Id);
+    }
 
-        public async Task DeleteAsync(int id)
-        {
-            var existingAppointment = await _repository.GetByIdAsync(id);
-            if (existingAppointment == null)
-            {
-                throw new KeyNotFoundException($"Appointment with ID {id} not found.");
-            }
+    private async Task<Appointments> FindAppointmentByIdAsync(int id)
+    {
+        var appointment = await _repository.GetByIdAsync(id);
+        if (appointment == null)
+            throw new KeyNotFoundException($"Appointment with ID {id} not found.");
+            
+        return appointment;
+    }
 
-            await _repository.DeleteAsync(id);
-        }
+    private async Task ValidateDtoAsync(AppointmentsBaseDto dto)
+    {
+        var validationResult = await _validator.ValidateAsync(dto);
+        if (!validationResult.IsValid)
+            throw new ValidationException("Validation failed", validationResult.Errors);
     }
 }

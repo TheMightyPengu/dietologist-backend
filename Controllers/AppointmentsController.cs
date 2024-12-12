@@ -15,7 +15,6 @@ public class AppointmentsController : ControllerBase
         _service = service;
     }
 
-    // GET: api/Appointments
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -23,7 +22,6 @@ public class AppointmentsController : ControllerBase
         return Ok(appointments);
     }
 
-    // GET: api/Appointments/5
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
@@ -31,15 +29,13 @@ public class AppointmentsController : ControllerBase
         return Ok(appointment);
     }
 
-    // POST: api/Appointments
     [HttpPost]
     public async Task<IActionResult> Add([FromBody] AppointmentsBaseDto appointmentDto)
     {
         var createdAppointment = await _service.AddAsync(appointmentDto);
-        return Ok(createdAppointment);
+        return CreatedAtAction(nameof(GetById), new { id = createdAppointment.Id }, createdAppointment);
     }
 
-    // PUT: api/Appointments/5
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] AppointmentsBaseDto appointmentDto)
     {
@@ -47,7 +43,6 @@ public class AppointmentsController : ControllerBase
         return NoContent();
     }
 
-    // DELETE: api/Appointments/5
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {

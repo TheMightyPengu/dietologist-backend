@@ -15,7 +15,6 @@ public class ArticlesController : ControllerBase
         _service = service;
     }
 
-    // GET: api/Articles
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -23,36 +22,27 @@ public class ArticlesController : ControllerBase
         return Ok(articles);
     }
 
-    // GET: api/Articles/5
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
         var article = await _service.GetDtoByIdAsync(id);
-        if (article == null) return NotFound();
         return Ok(article);
     }
 
-    // POST: api/Articles
     [HttpPost]
     public async Task<IActionResult> Add([FromBody] ArticlesBaseDto articleDto)
     {
-        if (!ModelState.IsValid) return BadRequest(ModelState);
-
         var createdArticle = await _service.AddAsync(articleDto);
         return CreatedAtAction(nameof(GetById), new { id = createdArticle.Id }, createdArticle);
     }
 
-    // PUT: api/Articles/5
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] ArticlesBaseDto articleDto)
     {
-        if (!ModelState.IsValid) return BadRequest(ModelState);
-
         await _service.UpdateAsync(id, articleDto);
         return NoContent();
     }
 
-    // DELETE: api/Articles/5
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {

@@ -2,15 +2,14 @@
 using dietologist_backend.DTO;
 using dietologist_backend.Models;
 using dietologist_backend.Repository;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using FluentValidation;
 
 namespace dietologist_backend.Services
 {
     public interface IArticlesService
     {
         Task<IEnumerable<ArticlesBaseDto>> GetAllDtosAsync();
-        Task<ArticlesBaseDto> GetDtoByIdAsync(int id);
+        Task<ArticlesBaseDto?> GetDtoByIdAsync(int id);
         Task<ArticlesBaseDto> AddAsync(ArticlesBaseDto dto);
         Task UpdateAsync(int id, ArticlesBaseDto dto);
         Task DeleteAsync(int id);
@@ -20,11 +19,16 @@ namespace dietologist_backend.Services
     {
         private readonly IArticlesRepository _repository;
         private readonly IMapper _mapper;
+        private readonly IValidator<ArticlesBaseDto> _validator;
 
-        public ArticlesService(IArticlesRepository repository, IMapper mapper)
+        public ArticlesService(
+            IArticlesRepository repository, 
+            IMapper mapper, 
+            IValidator<ArticlesBaseDto> validator)
         {
-            _repository = repository;
-            _mapper = mapper;
+            _repository = repository ?? throw new ArgumentNullException(nameof(repository));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+            _validator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
 
         public async Task<IEnumerable<ArticlesBaseDto>> GetAllDtosAsync()
@@ -33,18 +37,16 @@ namespace dietologist_backend.Services
             return _mapper.Map<IEnumerable<ArticlesBaseDto>>(articles);
         }
 
-        public async Task<ArticlesBaseDto> GetDtoByIdAsync(int id)
+        public async Task<ArticlesBaseDto?> GetDtoByIdAsync(int id)
         {
-            var article = await _repository.GetByIdAsync(id);
-            if (article == null)
-            {
-                throw new KeyNotFoundException($"Article with ID {id} not found.");
-            }
+            var article = await FindArticleByIdAsync(id);
             return _mapper.Map<ArticlesBaseDto>(article);
         }
 
         public async Task<ArticlesBaseDto> AddAsync(ArticlesBaseDto dto)
         {
+            await ValidateDtoAsync(dto);
+
             var entity = _mapper.Map<Articles>(dto);
             var createdEntity = await _repository.AddAsync(entity);
             return _mapper.Map<ArticlesBaseDto>(createdEntity);
@@ -52,25 +54,33 @@ namespace dietologist_backend.Services
 
         public async Task UpdateAsync(int id, ArticlesBaseDto dto)
         {
-            var existingArticle = await _repository.GetByIdAsync(id);
-            if (existingArticle == null)
-            {
-                throw new KeyNotFoundException($"Article with ID {id} not found.");
-            }
+            await ValidateDtoAsync(dto);
 
-            var updatedArticle = _mapper.Map(dto, existingArticle);
-            await _repository.UpdateAsync(updatedArticle);
+            var existingArticle = await FindArticleByIdAsync(id);
+            _mapper.Map(dto, existingArticle);
+            await _repository.UpdateAsync(existingArticle);
         }
 
         public async Task DeleteAsync(int id)
         {
-            var existingArticle = await _repository.GetByIdAsync(id);
-            if (existingArticle == null)
-            {
-                throw new KeyNotFoundException($"Article with ID {id} not found.");
-            }
+            var existingArticle = await FindArticleByIdAsync(id);
+            await _repository.DeleteAsync(existingArticle.Id);
+        }
 
-            await _repository.DeleteAsync(id);
+        private async Task<Articles> FindArticleByIdAsync(int id)
+        {
+            var article = await _repository.GetByIdAsync(id);
+            if (article == null)
+                throw new KeyNotFoundException($"Article with ID {id} not found.");
+            
+            return article;
+        }
+
+        private async Task ValidateDtoAsync(ArticlesBaseDto dto)
+        {
+            var validationResult = await _validator.ValidateAsync(dto);
+            if (!validationResult.IsValid)
+                throw new ValidationException("Validation failed", validationResult.Errors);
         }
     }
 }
