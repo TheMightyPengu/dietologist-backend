@@ -1,6 +1,10 @@
 using dietologist_backend.Data;
+using dietologist_backend.DTO;
+using dietologist_backend.Helpers;
 using dietologist_backend.Repository;
 using dietologist_backend.Services;
+using dietologist_backend.Validators;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,8 +13,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddEnvironmentVariables();
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<CustomExceptionFilter>();
+});
 builder.Services.AddAutoMapper(typeof(Program));
+
+builder.Services.AddScoped<IValidator<ProvidedServicesBaseDto>, ProvidedServicesBaseDtoValidator>();
 
 
 
