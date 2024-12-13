@@ -25,6 +25,7 @@ builder.Services
 
 // Automatically register all validators in the assembly
 builder.Services.AddValidatorsFromAssemblyContaining<ProvidedServicesBaseDtoValidator>();
+//builder.Services.AddValidatorsFromAssemblyContaining<ImagesBaseDtoValidator>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 
@@ -63,6 +64,16 @@ builder.Services.AddScoped<IContactMessagesService, ContactMessagesService>();
 builder.Services.AddScoped<IContactMessagesRepository, ContactMessagesRepository>();
 builder.Services.AddScoped<IEbooksService, EbooksService>();
 builder.Services.AddScoped<IEbooksRepository, EbooksRepository>();
+builder.Services.AddScoped<IImagesService, ImagesService>();
+builder.Services.AddScoped<IImagesRepository, ImagesRepository>();
+builder.Services.AddScoped<INewsletterSubscribersService, NewsletterSubscribersService>();
+builder.Services.AddScoped<INewsletterSubscribersRepository, NewsletterSubscribersRepository>();
+builder.Services.AddScoped<IRecipesService, RecipesService>();
+builder.Services.AddScoped<IRecipesRepository, RecipesRepository>();
+builder.Services.AddScoped<IResumeService, ResumeService>();
+builder.Services.AddScoped<IResumeRepository, ResumeRepository>();
+builder.Services.AddScoped<ISocialMediaLinksService, SocialMediaLinksService>();
+builder.Services.AddScoped<ISocialMediaLinksRepository, SocialMediaLinksRepository>();
 
 
 

@@ -7,16 +7,112 @@
       "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\services\\socialmedialinksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:services\\socialmedialinksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\controllers\\socialmedialinkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\socialmedialinkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\repository\\socialmedialinksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:repository\\socialmedialinksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\models\\images.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:models\\images.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\dto\\socialmedialinksbasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:dto\\socialmedialinksbasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\models\\socialmedialinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:models\\socialmedialinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\models\\newslettersubscribers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:models\\newslettersubscribers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\dto\\newslettersubscribers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:dto\\newslettersubscribers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\services\\resumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:services\\resumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\dto\\resumebasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:dto\\resumebasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\controllers\\resumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\resumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\repository\\resumerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:repository\\resumerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\dto\\recipesbasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:dto\\recipesbasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\repository\\recipesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:repository\\recipesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\repository\\providedservicesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:repository\\providedservicesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\services\\recipesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:services\\recipesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\dto\\providedservicesbasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:dto\\providedservicesbasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\controllers\\newslettersubscriberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\newslettersubscriberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\controllers\\providedservicescontrolller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\providedservicescontrolller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\services\\providedservicesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:services\\providedservicesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\services\\newslettersubscribersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:services\\newslettersubscribersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\repository\\imagesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:repository\\imagesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\repository\\newslettersubscribersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:repository\\newslettersubscribersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\controllers\\ebookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:controllers\\ebookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\services\\ebooksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:services\\ebooksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|c:\\users\\toy20\\desktop\\omg\\dietologist-backend\\repository\\ebooksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{557DD129-ABDC-4F72-8310-CC02842D6BCA}|dietologist-backend.csproj|solutionrelative:repository\\ebooksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +122,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SocialMediaLinksService.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\SocialMediaLinksService.cs",
+              "RelativeDocumentMoniker": "Services\\SocialMediaLinksService.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\SocialMediaLinksService.cs",
+              "RelativeToolTip": "Services\\SocialMediaLinksService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAYwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T22:06:11.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SocialMediaLinksRepository.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\SocialMediaLinksRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\SocialMediaLinksRepository.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\SocialMediaLinksRepository.cs",
+              "RelativeToolTip": "Repository\\SocialMediaLinksRepository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAswDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T22:05:55.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Images.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Models\\Images.cs",
+              "RelativeDocumentMoniker": "Models\\Images.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Models\\Images.cs",
+              "RelativeToolTip": "Models\\Images.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T22:05:30.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SocialMediaLinksController.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\SocialMediaLinksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SocialMediaLinksController.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\SocialMediaLinksController.cs",
+              "RelativeToolTip": "Controllers\\SocialMediaLinksController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T22:05:11.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NewsletterSubscribers.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Models\\NewsletterSubscribers.cs",
+              "RelativeDocumentMoniker": "Models\\NewsletterSubscribers.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Models\\NewsletterSubscribers.cs",
+              "RelativeToolTip": "Models\\NewsletterSubscribers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T22:02:39.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SocialMediaLinks.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Models\\SocialMediaLinks.cs",
+              "RelativeDocumentMoniker": "Models\\SocialMediaLinks.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Models\\SocialMediaLinks.cs",
+              "RelativeToolTip": "Models\\SocialMediaLinks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T22:02:33.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SocialMediaLinksBaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\DTO\\SocialMediaLinksBaseDto.cs",
+              "RelativeDocumentMoniker": "DTO\\SocialMediaLinksBaseDto.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\DTO\\SocialMediaLinksBaseDto.cs",
+              "RelativeToolTip": "DTO\\SocialMediaLinksBaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T22:02:32.219Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,48 +223,269 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADEAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEsAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T18:20:29.291Z",
+              "WhenOpened": "2024-12-13T21:35:44.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
+              "Title": "ResumeBaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\DTO\\ResumeBaseDto.cs",
+              "RelativeDocumentMoniker": "DTO\\ResumeBaseDto.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\DTO\\ResumeBaseDto.cs",
+              "RelativeToolTip": "DTO\\ResumeBaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:52:11.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ResumeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\ResumeRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ResumeRepository.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\ResumeRepository.cs",
+              "RelativeToolTip": "Repository\\ResumeRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:53:16.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResumeService.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\ResumeService.cs",
+              "RelativeDocumentMoniker": "Services\\ResumeService.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\ResumeService.cs",
+              "RelativeToolTip": "Services\\ResumeService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:53:05.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ResumeController.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\ResumeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ResumeController.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\ResumeController.cs",
+              "RelativeToolTip": "Controllers\\ResumeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:52:54.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RecipesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\RecipesRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\RecipesRepository.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\RecipesRepository.cs",
+              "RelativeToolTip": "Repository\\RecipesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:43:24.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RecipesService.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\RecipesService.cs",
+              "RelativeDocumentMoniker": "Services\\RecipesService.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\RecipesService.cs",
+              "RelativeToolTip": "Services\\RecipesService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:43:12.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NewsletterSubscribers.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\DTO\\NewsletterSubscribers.cs",
+              "RelativeDocumentMoniker": "DTO\\NewsletterSubscribers.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\DTO\\NewsletterSubscribers.cs",
+              "RelativeToolTip": "DTO\\NewsletterSubscribers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:27:52.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Resume.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Models\\Resume.cs",
+              "RelativeDocumentMoniker": "Models\\Resume.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Models\\Resume.cs",
+              "RelativeToolTip": "Models\\Resume.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:59:31.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RecipesController.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\RecipesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RecipesController.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\RecipesController.cs",
+              "RelativeToolTip": "Controllers\\RecipesController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:42:58.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RecipesBaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\DTO\\RecipesBaseDto.cs",
+              "RelativeDocumentMoniker": "DTO\\RecipesBaseDto.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\DTO\\RecipesBaseDto.cs",
+              "RelativeToolTip": "DTO\\RecipesBaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:41:44.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProvidedServicesBaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\DTO\\ProvidedServicesBaseDto.cs",
+              "RelativeDocumentMoniker": "DTO\\ProvidedServicesBaseDto.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\DTO\\ProvidedServicesBaseDto.cs",
+              "RelativeToolTip": "DTO\\ProvidedServicesBaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:41:43.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProvidedServicesService.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\ProvidedServicesService.cs",
+              "RelativeDocumentMoniker": "Services\\ProvidedServicesService.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\ProvidedServicesService.cs",
+              "RelativeToolTip": "Services\\ProvidedServicesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:34:30.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProvidedServicesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\ProvidedServicesRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ProvidedServicesRepository.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\ProvidedServicesRepository.cs",
+              "RelativeToolTip": "Repository\\ProvidedServicesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:32:22.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ImagesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\ImagesRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ImagesRepository.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\ImagesRepository.cs",
+              "RelativeToolTip": "Repository\\ImagesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:35:30.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NewsletterSubscribersService.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\NewsletterSubscribersService.cs",
+              "RelativeDocumentMoniker": "Services\\NewsletterSubscribersService.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\NewsletterSubscribersService.cs",
+              "RelativeToolTip": "Services\\NewsletterSubscribersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:34:27.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "NewsletterSubscribersRepository.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\NewsletterSubscribersRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\NewsletterSubscribersRepository.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\NewsletterSubscribersRepository.cs",
+              "RelativeToolTip": "Repository\\NewsletterSubscribersRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:33:02.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NewsletterSubscribersController.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\NewsletterSubscribersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NewsletterSubscribersController.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\NewsletterSubscribersController.cs",
+              "RelativeToolTip": "Controllers\\NewsletterSubscribersController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:29:23.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProvidedServicesControlller.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\ProvidedServicesControlller.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProvidedServicesControlller.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\ProvidedServicesControlller.cs",
+              "RelativeToolTip": "Controllers\\ProvidedServicesControlller.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwDcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:18:15.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "EbooksController.cs",
               "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\EbooksController.cs",
               "RelativeDocumentMoniker": "Controllers\\EbooksController.cs",
               "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\EbooksController.cs",
               "RelativeToolTip": "Controllers\\EbooksController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T18:20:12.16Z",
+              "WhenOpened": "2024-12-13T21:20:26.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EbooksService.cs",
-              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\EbooksService.cs",
-              "RelativeDocumentMoniker": "Services\\EbooksService.cs",
-              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Services\\EbooksService.cs",
-              "RelativeToolTip": "Services\\EbooksService.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAwwEwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "ImagesController.cs",
+              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\ImagesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ImagesController.cs",
+              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Controllers\\ImagesController.cs",
+              "RelativeToolTip": "Controllers\\ImagesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T18:19:57.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EbooksRepository.cs",
-              "DocumentMoniker": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\EbooksRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\EbooksRepository.cs",
-              "ToolTip": "C:\\Users\\toy20\\Desktop\\omg\\dietologist-backend\\Repository\\EbooksRepository.cs",
-              "RelativeToolTip": "Repository\\EbooksRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T18:19:51.702Z",
+              "WhenOpened": "2024-12-13T21:20:01.612Z",
               "EditorCaption": ""
             }
           ]
